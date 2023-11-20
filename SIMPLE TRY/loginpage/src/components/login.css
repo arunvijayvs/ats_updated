@@ -1,0 +1,21 @@
+.row
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+.column2
+{
+    /* background-color: rgb(203, 215, 215); */
+    background-color: black;
+    margin-left: 20px;
+}
+#logico
+{
+    background-image: url("https://www.shutterstock.com/image-vector/illustration-login-form-pop-on-260nw-601018952.jpg");
+    background-color: black;
+}
+.inside
+{
+    margin-left: 20px;
+}
