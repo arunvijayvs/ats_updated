@@ -1,21 +1,47 @@
-.row
+.bigrow
 {
     display: flex;
     flex-direction: row;
-    margin-right: 50px;
+    margin-top: 50px;
+    margin-right: 100px;
 }
+
+
+#goda
+{
+    color: blueviolet;
+    cursor: pointer;
+}
+
 .column2
 {
-    /* background-color: rgb(203, 215, 215); */
-    background-color: black;
-    margin-left: 20px;
+    background-color: rgb(203, 215, 215);
+    margin-right: 50px;    
+    margin-bottom: 100px;
 }
 #logico
 {
     background-image: url("https://www.shutterstock.com/image-vector/illustration-login-form-pop-on-260nw-601018952.jpg");
     background-color: black;
+    margin-top: 10px;
 }
 .inside
 {
     margin-left: 20px;
+}
+.column1
+{
+    margin-right: 100px;
+    margin-left: 200px;
+}
+#head
+{
+  display: flex;
+  justify-content: center;
+}
+.logoof{
+    margin-left: 50px;
+    background-repeat: no-repeat;
+    height: 130px;
+    background-image: url("C:\Users\hp5cd\OneDrive\Desktop\HIRESMART logo.png");
 }

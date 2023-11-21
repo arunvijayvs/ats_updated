@@ -4,6 +4,7 @@ import LockOutlinedIcon from '@mui/icons-material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Grid from '@mui/material';
 import './signup.css'
+import { useNavigate } from 'react-router-dom';
 const Signuppage= () => {
     
     const[firstname,setFirstname]=useState('');
@@ -35,6 +36,9 @@ const Signuppage= () => {
     console.log('Password:', password);
   };
 
+  let backtologin=useNavigate();
+
+
   return (
     <Container id='bigcontainer'>
     <Container id='imgicon'>
@@ -47,7 +51,7 @@ const Signuppage= () => {
                         </Avatar>
                        
       
-      <h1>Signup Page</h1>
+      <h1 id="head">Signup</h1>
       <form onSubmit={handleSubmit}>
 
         <TextField variant="outlined" margin="normal" required fullWidth label="Firstname"  type="text" onChange={handleFirstname}>
@@ -73,7 +77,7 @@ const Signuppage= () => {
         
 
 
-        <Button type="submit" fullWidth variant="contained" color="primary">
+        <Button type="submit" onClick={()=> {backtologin("/login")}} fullWidth variant="contained" color="primary">
           Create Account
         </Button>
         <br></br>

@@ -1,0 +1,25 @@
+.mainFooter
+{
+    color: white;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+}
+.list{
+    list-style-type: none;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.col{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#c
+{
+    cursor: pointer;
+}

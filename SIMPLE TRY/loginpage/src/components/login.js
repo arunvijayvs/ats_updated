@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { TextField , Button , Container, Box } from '@mui/material';
+import { TextField , Button , Container} from '@mui/material';
+import {Link, useNavigate } from 'react-router-dom';
 import './login.css'
 
 const Login= () => {
@@ -15,18 +16,26 @@ const Login= () => {
   }
 
   const handleSubmit = (event) => {
+
     event.preventDefault();
     console.log('Username:', username);
     console.log('Password:', password);
   };
 
-  return (
-    <Box className="row">
-      <Container className="column1">
-      </Container>
-    <Container className="column2">
+  let navigate=useNavigate();
+  let gotosignup=useNavigate();
 
-        <h1>Login Page</h1>
+  return (
+    <>
+    <div className='logoof'>
+    </div>
+    <div className='bigrow'>
+      <Container className="column1">
+        <img src='https://i.pinimg.com/564x/0c/9b/89/0c9b89b62ba04b4b4740f4ce2da28b54.jpg'></img>
+      </Container>
+    <Container  maxWidth='xs' className="column2" >
+
+        <h1 id="head">Login</h1>
         <form onSubmit={handleSubmit}>
 
           <TextField variant="outlined" margin="normal" required fullWidth label="Username" onChange={handleUsername}>
@@ -39,15 +48,20 @@ const Login= () => {
 
           
 
-          <Button type="submit" fullWidth variant="contained" color="primary">
+          <Button type="submit" onClick={()=> {navigate("/home")}} fullWidth variant="contained" color="primary">
             Log In
           </Button>
           <br></br>
           <br></br>
-
+          <p>Don't have an Account?
+            <a id='goda' onClick={()=>{
+              gotosignup("/signup")
+            }}>  Create new account</a>
+          </p>
         </form>
     </Container>
-    </Box>
+    </div>
+    </>
   );
 };
 

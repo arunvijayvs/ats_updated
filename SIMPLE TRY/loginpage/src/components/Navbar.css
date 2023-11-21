@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.menu
+{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.con
+{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.right{
+    display: flex;
+    flex-wrap: wrap;
+}
+.right li{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+}
+.right li:hover
+{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image
+{
+    margin-top: 20px;
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.name{
+    font-family:DM Serif Display ;
+}

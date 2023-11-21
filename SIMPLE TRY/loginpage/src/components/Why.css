@@ -1,0 +1,34 @@
+body{
+    background-color: white;
+}
+#con
+{
+    background-color: rgb(255, 255, 255);
+}
+#ques{
+    margin-top: 70px;
+    color: #467c00;
+} 
+#txt
+{
+    color: black;
+}
+#img
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 500px;
+}
+
+#img2
+{
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+#para
+{
+    color: black;
+}
