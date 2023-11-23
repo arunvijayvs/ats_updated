@@ -12,7 +12,9 @@ export default function Navbar() {
       </h1>
       <div className='con'>
         <ul className='right'>
-            <li>About us</li>
+            <li onClick={()=>{
+              navida("/Aboutus")
+            }}>About us</li>
             <li>Departments</li>
             <li>Vacancies</li>
             <li>FAQs</li>

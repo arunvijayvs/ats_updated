@@ -27,14 +27,32 @@ const Signuppage= () => {
       setPassword(event.target.value) 
       
   }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Firstname:',firstname);
-    console.log('Lastname:', lastname);
-    console.log('email:',mailid);
-    console.log('Password:', password);
-  };
+  const [confirmpassword, setconfirmPassword] = useState('');
+  const handleConfirmPassword = (event) => { 
+      setconfirmPassword(event.target.value) 
+      
+  }
+    
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      console.log('Firstname:',firstname);
+      console.log('Lastname:', lastname);
+      console.log('email:',mailid);
+      console.log('Password:', password);
+      let message=document.getElementById("message");
+      if(password.length!=0)
+      {
+        if(password==confirmpassword)
+        {
+          message.textContent="Passwords Matched";
+          backtologin("/login")
+        }
+        else
+        {
+          message.textContent="Passwords didn't Match";
+        }
+      }
+    };
 
   let backtologin=useNavigate();
 
@@ -72,12 +90,17 @@ const Signuppage= () => {
             {password}
         </TextField>
         <br></br>
+        <TextField variant="outlined" margin="normal" required fullWidth label="Confirm Password" type="password" onChange={handleConfirmPassword}>
+            {confirmpassword}
+        </TextField>
+        <br></br>
+        <p id="message"></p>
         <br></br>
    
         
 
 
-        <Button type="submit" onClick={()=> {backtologin("/login")}} fullWidth variant="contained" color="primary">
+        <Button type="submit" fullWidth variant="contained" color="primary">
           Create Account
         </Button>
         <br></br>

@@ -1,0 +1,95 @@
+.about-us-container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5551470588235294) 0%, rgba(35,9,121,0.7288165266106443) 7%, rgba(0,212,255,0.8492647058823529) 100%);
+    color: white;
+  }
+  
+  .about-us-content {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+  }
+  
+  .about-us-content h2 {
+    color: #333;
+  }
+  
+  .about-us-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #3494e6;
+  }
+  
+  .achievements-section {
+    background-color: darkgrey;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .achievements-section h3 {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .achievement-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .achievement-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  
+  .interactive-dropdown {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .interactive-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-icon {
+    font-size: 1.2em;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #para
+  {
+    color: black;
+  }
+  #small{
+    background-color: black;
+  }

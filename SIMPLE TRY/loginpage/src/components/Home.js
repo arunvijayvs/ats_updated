@@ -9,24 +9,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-function Copyright() {
-  return (
-   
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 const defaultTheme = createTheme();
 
 export default function Home() {
@@ -58,7 +44,7 @@ export default function Home() {
                 />
                 <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"Teko"}}>
-                    Login1
+                    Company1
                     <hr></hr>
                   </Typography>
                   <Typography>
@@ -82,7 +68,7 @@ export default function Home() {
                 />
                 <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"Comfortaa"}}>
-                    Login2<hr></hr>
+                    Company2<hr></hr>
                   </Typography>
                   <Typography>
 
@@ -109,7 +95,7 @@ export default function Home() {
                 />
                 <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant="h5" component="h2" style={{fontFamily:"Comfortaa"}}>
-                    Login3
+                    Company3
                     <hr></hr>
                   </Typography>
                   <Typography>

@@ -13,9 +13,9 @@ body{
   border-radius: 15px;
   align-items: center;
   align-content: center;
-  margin-top: 100px;
+  margin-top: 70px;
   float: right ;
-  margin-right: 25px;
+  margin-right: 15px;
  
 }
 #avataricon{
@@ -34,4 +34,8 @@ flex-direction: row;
   background-color: black;
   border-radius: 50px;
 
+}
+#message{
+  color: red;
+  font-size: 20px;
 }
