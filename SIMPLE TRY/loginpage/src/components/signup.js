@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect ,useState } from 'react';
 import {Avatar, TextField , Button , Container } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Grid from '@mui/material';
 import './signup.css'
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 const Signuppage= () => {
     
     const[firstname,setFirstname]=useState('');
@@ -35,14 +36,26 @@ const Signuppage= () => {
     
     const handleSubmit = (event) => {
       event.preventDefault();
-      console.log('Firstname:',firstname);
-      console.log('Lastname:', lastname);
-      console.log('email:',mailid);
-      console.log('Password:', password);
+      const userData = {
+        firstname: firstname,
+        lastname: lastname,
+        mailid: mailid,
+        password: password,
+      };
+    
+      console.log('User Data:', userData);
+    
+      axios.post(`http://localhost:3000/users`, userData)
+        .then(res => {
+          console.log(res.data);
+        })
+        .catch(error => {
+          console.log("Something went wrong " + error);
+        });
       let message=document.getElementById("message");
-      if(password.length!=0)
+      if(password.length!==0)
       {
-        if(password==confirmpassword)
+        if(password===confirmpassword)
         {
           message.textContent="Passwords Matched";
           backtologin("/login")
@@ -53,6 +66,7 @@ const Signuppage= () => {
         }
       }
     };
+    
 
   let backtologin=useNavigate();
 

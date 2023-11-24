@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Balaji",
+      "lastname": "SRI",
+      "email": "balajisrinivasan13052005@gmail.com",
+      "password": "Balaji@2005"
+    },
+    {
+      "firstname": "Ashok",
+      "lastname": "Kanna R",
+      "mailid": "ashokjack76@gmail.com",
+      "password": "ashokk",
+      "id": 2
+    },
+    {
+      "firstname": "Arun",
+      "lastname": "Vijay V S",
+      "mailid": "arunvijay2945@gmail.com",
+      "password": "avna",
+      "id": 3
+    },
+    {
+      "firstname": "Ashwin",
+      "lastname": "S",
+      "mailid": "ashwintrk27@gmail.com",
+      "password": "ash",
+      "id": 4
+    },
+    {
+      "firstname": "Srinivasan",
+      "lastname": "G",
+      "mailid": "srinivasansumathi05031972@gmail.com",
+      "password": "srinu",
+      "id": 5
+    }
+  ]
+}

@@ -1,26 +1,25 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useContext } from 'react';
 import { TextField , Button , Container} from '@mui/material';
 import {Link, useNavigate } from 'react-router-dom';
 import './login.css'
 
+import axios from 'axios';
+
 const Login= () => {
 
-  const [username, setUsername] = useState('');
-  const handleUsername = (event) => { 
-      setUsername(event.target.value) 
+  const [email, setMailid] = useState('');
+  const handleMail = (event) => { 
+      setMailid(event.target.value) 
   }
-
   const [password, setPassword] = useState('');
   const handlePassword = (event) => { 
       setPassword(event.target.value) 
   }
-
   const handleSubmit = (event) => {
 
     event.preventDefault();
-    console.log('Username:', username);
-    console.log('Password:', password);
-  };
+    navigate()
+  }
 
   let navigate=useNavigate();
   let gotosignup=useNavigate();
@@ -38,8 +37,8 @@ const Login= () => {
         <h1 id="head">Login</h1>
         <form onSubmit={handleSubmit}>
 
-          <TextField variant="outlined" margin="normal" required fullWidth label="Username" onChange={handleUsername}>
-              {username}
+          <TextField variant="outlined" margin="normal" required fullWidth label="email" onChange={handleMail}>
+              {email}
           </TextField>
 
           <TextField variant="outlined" margin="normal" required fullWidth label="Password" type="password" onChange={handlePassword}>
@@ -48,7 +47,7 @@ const Login= () => {
 
           
 
-          <Button type="submit" onClick={()=> {navigate("/home")}} fullWidth variant="contained" color="primary">
+          <Button type="submit" fullWidth variant="contained" color="primary">
             Log In
           </Button>
           <br></br>
