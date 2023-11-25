@@ -7,6 +7,8 @@ import Home from './components/Home';
 import Login from './components/login';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Aboutus from './components/Aboutus';
+import Dept from './components/Dept';
+import FAQ from './components/FAQ';
 function App() {
   return (
     <Router>
@@ -16,6 +18,7 @@ function App() {
           <Route path="/signup" element={<Signuppage/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/Aboutus" element={<Aboutus/>}></Route>
+          <Route path="/FAQ" element={<FAQ/>}></Route>
         </Routes>
     </Router>
   );

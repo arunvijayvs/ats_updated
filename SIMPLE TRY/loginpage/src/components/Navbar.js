@@ -17,10 +17,13 @@ export default function Navbar() {
             }}>About us</li>
             <li>Departments</li>
             <li>Vacancies</li>
-            <li>FAQs</li>
+            <li
+            onClick={()=>{
+              navida("/FAQ")
+            }}>FAQs</li>
             <li onClick={()=>{
               navida("/login")
-            }}>Login</li>
+            }}>Logout</li>
         </ul>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img className='image' src="https://i.pinimg.com/564x/49/ce/d2/49ced2e29b6d4945a13be722bac54642.jpg"></img>

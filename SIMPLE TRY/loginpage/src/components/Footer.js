@@ -37,7 +37,7 @@ export default function Footer() {
                 <h3>Contact us:</h3>
                 <hr></hr>
                     <li><FacebookIcon/>  Facebook</li>
-                    <li><LinkedInIcon/>  Instagram</li>
+                    <li><LinkedInIcon/>  LinkedIn</li>
                     <li><TwitterIcon/>  X (Twitter)</li>
                     <li><InstagramIcon/>  Instagram</li>
                 </ul>

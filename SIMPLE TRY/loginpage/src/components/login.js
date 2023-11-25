@@ -18,7 +18,9 @@ const Login= () => {
   const handleSubmit = (event) => {
 
     event.preventDefault();
-    navigate()
+    
+        navigate("/home")
+      
   }
 
   let navigate=useNavigate();
