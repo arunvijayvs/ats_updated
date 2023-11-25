@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './FAQ.css'; // Import the CSS file for styling
 import { ArrowDropDown, Facebook, QuestionAnswer } from '@mui/icons-material';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 // Create the FAQ component
 const FAQ = () => {
@@ -48,8 +49,8 @@ const FAQ = () => {
 
   return (
 <div id='entire'>
-    <div className="faq-container">
       <Navbar/>
+    <div className="faq-container">
       <div id='faq'>
         <br></br>
         <br></br>
@@ -78,6 +79,10 @@ const FAQ = () => {
         ))}
       </div>
     </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <Footer/>
     </div>
   );
 };

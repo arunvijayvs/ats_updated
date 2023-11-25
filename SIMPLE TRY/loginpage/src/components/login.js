@@ -18,8 +18,18 @@ const Login= () => {
   const handleSubmit = (event) => {
 
     event.preventDefault();
-    
-        navigate("/home")
+    axios.get(`http://localhost:3000/users?mailid=${email}&password=${password}`)
+      .then(res=>{
+        if(res.data.length>0)
+        {
+          navigate("/home");
+        }
+        else{
+          alert("User account doesn't exist");
+        }
+      }
+
+        )
       
   }
 
@@ -39,7 +49,7 @@ const Login= () => {
         <h1 id="head">Login</h1>
         <form onSubmit={handleSubmit}>
 
-          <TextField variant="outlined" margin="normal" required fullWidth label="email" onChange={handleMail}>
+          <TextField variant="outlined" margin="normal" required fullWidth label="Email" onChange={handleMail}>
               {email}
           </TextField>
 

@@ -15,8 +15,11 @@ export default function Navbar() {
             <li onClick={()=>{
               navida("/Aboutus")
             }}>About us</li>
-            <li>Departments</li>
-            <li>Vacancies</li>
+            <li
+            onClick={()=>{
+              navida("/Department")
+            }}>Departments</li>
+            <li>Resume</li>
             <li
             onClick={()=>{
               navida("/FAQ")

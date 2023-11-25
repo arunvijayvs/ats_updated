@@ -6,6 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { useNavigate } from 'react-router-dom';
 export default function Footer() {
+  let naviga=useNavigate();
   return (
     <div className='mainFooter'>
       <div className='Cointainer'>
@@ -26,10 +27,19 @@ export default function Footer() {
                 <ul className='list'>
                 <h3>Quick Links</h3>
                 <hr></hr>
-                    <li>About Us</li>
-                    <li>Departments</li>
-                    <li>Vacancies</li>
-                    <li>FAQs</li>
+                    <li
+                    onClick={()=>{
+                      naviga("/Aboutus")
+                    }}>About Us</li>
+                    <li
+                    onClick={()=>{
+                      naviga("/Department")
+                    }}>Departments</li>
+                    <li>Resume</li>
+                    <li
+                    onClick={()=>{
+                      naviga("/FAQ")
+                    }}>FAQs</li>
                 </ul>
             </div>
             <div className='col' id='c'>
