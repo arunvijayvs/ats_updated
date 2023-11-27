@@ -57,7 +57,7 @@ const FAQ = () => {
         <br></br>
         <br></br>
         <br></br>
-      <h2 >Frequently Asked Questions  
+      <h2 id="whatis" >Frequently Asked Questions  
        
         
 </h2>

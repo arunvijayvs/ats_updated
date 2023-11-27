@@ -19,7 +19,10 @@ export default function Navbar() {
             onClick={()=>{
               navida("/Department")
             }}>Departments</li>
-            <li>Resume</li>
+            <li
+            onClick={()=>{
+              navida("/Resume")
+            }}>Resume</li>
             <li
             onClick={()=>{
               navida("/FAQ")

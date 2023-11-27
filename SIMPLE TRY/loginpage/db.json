@@ -1,34 +1,6 @@
 {
   "users": [
     {
-      "firstname": "Ashok",
-      "lastname": "Kanna R",
-      "mailid": "ashokjack76@gmail.com",
-      "password": "ashokk",
-      "id": 1
-    },
-    {
-      "firstname": "Arun",
-      "lastname": "Vijay V S",
-      "mailid": "arunvijay2945@gmail.com",
-      "password": "avna",
-      "id": 2
-    },
-    {
-      "firstname": "Ashwin",
-      "lastname": "S",
-      "mailid": "ashwintrk27@gmail.com",
-      "password": "ash",
-      "id": 3
-    },
-    {
-      "firstname": "Srinivasan",
-      "lastname": "G",
-      "mailid": "srinivasansumathi05031972@gmail.com",
-      "password": "srinu",
-      "id": 4
-    },
-    {
       "firstname": "Balaji",
       "lastname": "SRI",
       "mailid": "balajisrinivasan13052005@gmail.com",
@@ -36,11 +8,53 @@
       "id": 5
     },
     {
-      "firstname": "Haribaskar",
-      "lastname": "S",
-      "mailid": "hbk@gmail.com",
-      "password": "hbk",
+      "firstname": "Arun",
+      "lastname": "Vijay",
+      "mailid": "arunvijay2945@gmail.com",
+      "password": "arun",
       "id": 6
+    }
+  ],
+  "resume": [
+    {
+      "firstname": "Balaji",
+      "lastname": "SRI",
+      "email": "balajisrinivasan13052005@gmail.com",
+      "phone": "8189816137",
+      "branch": "CSE",
+      "year": "6",
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "firstname": "Ashok",
+      "lastname": "Kanna",
+      "email": "ashok@gmail.com",
+      "phone": "8756792652",
+      "branch": "CSE",
+      "year": "7",
+      "gender": "MALE",
+      "id": 2
+    },
+    {
+      "firstname": "Balaji",
+      "lastname": "SRI",
+      "email": "balajisrinivasan13052005@gmail.com",
+      "phone": "8189815115",
+      "branch": "CSE",
+      "year": "3",
+      "gender": "MALE",
+      "id": 3
+    },
+    {
+      "firstname": "Deepak",
+      "lastname": "Leo",
+      "email": "dpl@gmail.com",
+      "phone": "7867896787",
+      "branch": "CSE",
+      "year": "6",
+      "gender": "MALE",
+      "id": 4
     }
   ]
 }

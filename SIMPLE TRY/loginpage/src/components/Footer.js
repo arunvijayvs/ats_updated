@@ -35,7 +35,10 @@ export default function Footer() {
                     onClick={()=>{
                       naviga("/Department")
                     }}>Departments</li>
-                    <li>Resume</li>
+                    <li
+                    onClick={()=>{
+                      naviga("/Resume")
+                    }}>Resume</li>
                     <li
                     onClick={()=>{
                       naviga("/FAQ")

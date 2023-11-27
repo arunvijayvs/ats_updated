@@ -10,6 +10,11 @@
     flex-direction: column;
     
   }
+
+  #whatis
+  {
+    color: white;
+  }
   
   .faq-item {
     border: 1px solid #ddd;
