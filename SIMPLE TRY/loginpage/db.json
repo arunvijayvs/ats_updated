@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "firstname": "Balaji",
-      "lastname": "SRI",
-      "mailid": "balajisrinivasan13052005@gmail.com",
-      "password": "Balaji@2005",
-      "id": 5
-    },
-    {
       "firstname": "Arun",
       "lastname": "Vijay",
       "mailid": "arunvijay2945@gmail.com",
@@ -25,36 +18,6 @@
       "year": "6",
       "gender": "Male",
       "id": 1
-    },
-    {
-      "firstname": "Ashok",
-      "lastname": "Kanna",
-      "email": "ashok@gmail.com",
-      "phone": "8756792652",
-      "branch": "CSE",
-      "year": "7",
-      "gender": "MALE",
-      "id": 2
-    },
-    {
-      "firstname": "Balaji",
-      "lastname": "SRI",
-      "email": "balajisrinivasan13052005@gmail.com",
-      "phone": "8189815115",
-      "branch": "CSE",
-      "year": "3",
-      "gender": "MALE",
-      "id": 3
-    },
-    {
-      "firstname": "Deepak",
-      "lastname": "Leo",
-      "email": "dpl@gmail.com",
-      "phone": "7867896787",
-      "branch": "CSE",
-      "year": "6",
-      "gender": "MALE",
-      "id": 4
     }
   ]
 }
