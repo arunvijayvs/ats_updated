@@ -6,6 +6,20 @@
       "mailid": "arunvijay2945@gmail.com",
       "password": "arun",
       "id": 6
+    },
+    {
+      "firstname": "Ashok",
+      "lastname": "Kanna",
+      "mailid": "ak@gmail.com",
+      "password": "ak",
+      "id": 7
+    },
+    {
+      "firstname": "Ashok",
+      "lastname": "Kanna",
+      "mailid": "ak@gmail.com",
+      "password": "ak",
+      "id": 8
     }
   ],
   "resume": [
@@ -18,6 +32,16 @@
       "year": "6",
       "gender": "Male",
       "id": 1
+    },
+    {
+      "firstname": "dfgh",
+      "lastname": "fhj",
+      "email": "arunvijay2945@gmail.com",
+      "phone": "ertyu",
+      "branch": "sdfgh",
+      "year": "fghj",
+      "gender": "sdfgh",
+      "id": 2
     }
   ]
 }
