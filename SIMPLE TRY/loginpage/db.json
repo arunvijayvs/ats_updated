@@ -42,6 +42,26 @@
       "year": "fghj",
       "gender": "sdfgh",
       "id": 2
+    },
+    {
+      "firstname": "Gowtham",
+      "lastname": "KN",
+      "email": "kngowtham@gmail.com",
+      "phone": "8987878789",
+      "branch": "CSE",
+      "year": "4",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "firstname": "deepak",
+      "lastname": "leo",
+      "email": "leo@gmaoil.com",
+      "phone": "9867917538",
+      "branch": "CSE",
+      "year": "6",
+      "gender": "MALE",
+      "id": 4
     }
   ]
 }
