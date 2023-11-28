@@ -2,10 +2,14 @@ import React from 'react';
 import './Aboutus.css'; 
 import { CheckCircle, Group, Assignment, EmojiEvents, Star } from '@mui/icons-material'; 
 import Navbar from './Navbar';
-
+import { useTheme } from './ThemeContext';
+import { Button } from '@mui/material';
 const Aboutus = () => {
+
+  const theme=useTheme();
   return (
-      <div className="about-us-container">
+      <div className="about-us-container" style={{backgroundColor: theme.isDarkMode ? 'black' : 'white',
+      color: theme.isDarkMode ? 'white' : 'black',}}>
         <Navbar/>
         <br></br>
         <br></br>
@@ -13,6 +17,20 @@ const Aboutus = () => {
         <br></br>
         <br></br>
       <div className="about-us-content">
+      <Button
+        variant="outlined"
+        onClick={theme.toggleTheme}
+        style={{
+          height: '4em',
+          border: '2px solid black',
+          borderRadius: '5px',
+          backgroundColor: theme.isDarkMode ? 'black' : 'white',
+          color: theme.isDarkMode ? 'white' : 'black',
+          marginLeft: '10px',
+        }}
+      >
+        Toggle Theme
+      </Button>
         <h2>About HireSmart</h2>
         <p>
           Welcome to HireSmart, where we make hiring the right talent easy and efficient for your organization.
